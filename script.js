@@ -303,4 +303,4 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
   window.addEventListener('resize', render);
 
   render();
-})();
+})(); 
