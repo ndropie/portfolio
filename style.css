@@ -292,7 +292,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:1.5rem 3r
     flex-direction:column;
     color:var(--text);
     overflow:hidden;
-  }
+  } 
 
   /* ---- Terminal-style title bar ---- */
   .cg-titlebar{
