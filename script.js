@@ -42,7 +42,7 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
   // 👉 Replace each `img` path below with your own certificate image
   //    (e.g. "images/aws-cert.png", "/certs/gcp.jpg", or an absolute URL).
   const CERTS = [
-    
+
      {
       issuer: "HackerRank",
       title: "Software Engineer Intern",
@@ -51,6 +51,7 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
       img: "images/software_engineer_intern certificate.png"
     },
 
+    
     {
       issuer: "DATACOM",
       title: "Software Development Job Simulation",
