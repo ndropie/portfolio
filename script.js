@@ -43,6 +43,14 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
   //    (e.g. "images/aws-cert.png", "/certs/gcp.jpg", or an absolute URL).
   const CERTS = [
     
+     {
+      issuer: "HackerRank",
+      title: "Software Engineer Intern",
+      date: "Jul 2026",
+      color: "#4d9fff",
+      img: "images/software_engineer_intern certificate.png"
+    },
+
     {
       issuer: "DATACOM",
       title: "Software Development Job Simulation",
