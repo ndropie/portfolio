@@ -95,6 +95,50 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
   const dotsWrap = document.getElementById('cgDots');
   const N = CERTS.length;
 
+  // Certificate image viewer// ------------------------------------------------- viewers starts
+  const certificateViewer = document.getElementById('certificateViewer');
+  const certificateViewerImage = document.getElementById('certificateViewerImage');
+  const certificateClose = document.getElementById('certificateClose');
+
+  function openCertificate(imagePath, title) {
+    certificateViewerImage.src = imagePath;
+    certificateViewerImage.alt = title + " certificate";
+    
+    certificateViewer.classList.add('active');
+    document.documentElement.classList.add('certificate-open');
+  document.body.classList.add('certificate-open');
+  }
+
+  function closeCertificate() {
+    certificateViewer.classList.remove('active');
+      document.documentElement.classList.remove('certificate-open');
+  document.body.classList.remove('certificate-open');
+  }
+
+  certificateClose.addEventListener('click', closeCertificate);
+
+  // Close when clicking the dark background
+  certificateViewer.addEventListener('click', (e) => {
+    if (e.target === certificateViewer) {
+      closeCertificate();
+    }
+  });
+
+  // Close with Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeCertificate();
+    }
+  });
+
+  // locking the screen preventing overflow of other sections over the image
+  
+  certificateViewer.addEventListener('wheel', function(e) {
+  e.preventDefault();
+}, { passive: false });
+
+  // ---------------------------------- viewers end
+
   // Placeholder shown inline (as a data-URI) until you swap in a real <img src>.
   const placeholderFor = (color, label) =>
     `data:image/svg+xml;utf8,${encodeURIComponent(`
@@ -136,7 +180,7 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
     `;
     el.addEventListener('click', () => {
       if (dragMoved) return;
-      goTo(i);
+      openCertificate(c.img, c.title);
     });
     track.appendChild(el);
     return el;
