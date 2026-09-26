@@ -208,6 +208,11 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:1.5rem 3r
     background-clip:text;
     color:transparent;
   }
+#download_resume_button{
+  text-decoration: none;
+  color: var(--green);
+  text-decoration-line: none;
+}
 
   .cg-header p{
     font-size:15.5px;
