@@ -43,11 +43,19 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
   //    (e.g. "images/aws-cert.png", "/certs/gcp.jpg", or an absolute URL).
   const CERTS = [
 
+    
+     {
+      issuer: "TuteDude",
+      title: "Python Course",
+      date: "Sept 2026",
+      img: "images/TUTEDUDE_PYTHON.png"
+    },
+
+
      {
       issuer: "HackerRank",
       title: "Software Engineer Intern",
       date: "Jul 2026",
-      color: "#4d9fff",
       img: "images/software_engineer_intern certificate.png"
     },
 
@@ -56,21 +64,18 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
       issuer: "DATACOM",
       title: "Software Development Job Simulation",
       date: "Jul 2026",
-      color: "#4d9fff",
       img: "images/Datacom Software Development.png"
     },
     {
       issuer: "FORAGE & MasterCard",
       title: "CyberSecurity job Simulation - Certificate",
       date: "Jul 2026",
-      color: "#8f7dff",
       img: "images/Mastercard Cybersecurity Job Simulation.png"
     },
     {
       issuer: "NIELIT",
       title: "O LEVEL",
       date: "Nov 2023",
-      color: "#ff9f4d",
       img: "images/NIELIT O Level Certificate.png"
     },
 
@@ -78,14 +83,12 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
       issuer: "ALISON",
       title: "Styling Websites with CSS",
       date: "Nov 2024",
-      color: "#ff9f4d",
       img: "images/Alison - Styling Websites with CSS.png"
     },
     {
       issuer: "Solo Learn",
       title: "HTML COURSE",
       date: "July 2022",
-      color: "#4dffb0",
       img: "images/Sololearn HTML Course.png"
     }
   ];
